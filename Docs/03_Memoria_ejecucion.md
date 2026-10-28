@@ -7,6 +7,14 @@
 - **Comprobaciones:** Se ha subido correctamente el proyecto a GitHub
 - **Commits relevantes:** docs: preproducción inicial
 
+## Jornada 1.5: [28/10/2026]
+- **Tiempo aproximado:** 2 horas
+- **Tareas realizadas:** Crear el graybox del mapa y el movimiento del jugador y de la cámara
+- **Decisiones:** Probar el sistema de InputActions de Unity6
+- **Problemas y soluciones:** No sabía usar el sistema de InputActions por lo que he seguido un [tutorial de youtube](https://www.youtube.com/watch?v=Lz4_iDzYf9I)
+- **Comprobaciones:** Ni la camara ni el personaje transpasan paredes
+- **Commits relevantes:** Greybox y Movimiento
+
 ## Jornada 2: [fecha]
 - **Tiempo aproximado:** 
 - **Tareas realizadas:** 
