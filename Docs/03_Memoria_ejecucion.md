@@ -15,21 +15,21 @@
 - **Comprobaciones:** Ni la camara ni el personaje transpasan paredes
 - **Commits relevantes:** Greybox y Movimiento
 
-## Jornada 2: [fecha]
-- **Tiempo aproximado:** 
-- **Tareas realizadas:** 
-- **Decisiones:** 
-- **Problemas y soluciones:** 
-- **Comprobaciones:** 
-- **Commits relevantes:** 
+## Jornada 2: [29/10/2026]
+- **Tiempo aproximado:** 4 horas
+- **Tareas realizadas:** Programación de la interfaz de interactuables, modo de inspeccion y notas.
+- **Decisiones:** Hacer que los objetos sean inspeccionables por rotación.
+- **Problemas y soluciones:** El script no detectaba correctamente la cámara de CineMachine para sacar los raycast, asi que hice una referencia a la cámara original.
+- **Comprobaciones:** Los objetos se pueden coger y soltar las veces que sean necesarias y las notas se pueden leer.
+- **Commits relevantes:** Objetos Interactuables
 
-## Jornada 3: [fecha]
-- **Tiempo aproximado:** 
-- **Tareas realizadas:** 
-- **Decisiones:** 
-- **Problemas y soluciones:** 
-- **Comprobaciones:** 
-- **Commits relevantes:** 
+## Jornada 3: [30/10/2029]
+- **Tiempo aproximado:** 7 Horas
+- **Tareas realizadas:** Progamación de la caja y llaves. Gestion de los 3 eventos sin sonido de momento: llegada, coge segunda nota y final.
+- **Decisiones:** No volver a poder coger la caja de las llaves vacia, modelar la caja en blender por mi cuenta.
+- **Problemas y soluciones:** Al abrir la caja no se podian coger las llaves ya que estaba delante el collider de la caja, he decidido que al soltar la caja se desactive el collider y así coger la llave de adentro.
+- **Comprobaciones:** Los eventos se efectuan correctamente y los mensajes se muestran por pantalla.
+- **Commits relevantes:** Caja, llaves y eventos.
 
 ## Jornada 4: [fecha]
 - **Tiempo aproximado:** 
@@ -56,16 +56,15 @@
 | Bloque | Estimado | Real | Desviación | Motivo |
 |---|---|---|---|---|
 | A. Preproducción, repo, tablero | 3 h | 4 h| 1h| Tardé mas en escribir de lo que pensaba |
-| B. Greybox + movimiento | 3 h | | | |
-| C. Interacción base + progreso + UI | 4 h | | | |
-| D. Notas, caja, puzzle, llave | 6 h | | | |
-| E. Doc. configuración del puzzle | 1 h | | | |
-| F. Tensión | 3 h | | | |
-| G. Puerta, final, reinicio | 4 h | | | |
-| H. Audio, luz, feedback | 4 h | | | |
-| I. Test + correcciones | 4 h | | | |
-| J. Documentación | 5 h | | | |
-| K. Build y memoria | 3 h | | | |
+| B. Greybox + movimiento | 3 h | 2 h| -1h| Tarde menos en el greybox de lo que pensaba|
+| C. Interacción base + progreso + UI | 4 h | 4 h| 0h| |
+| D. Notas, caja, puzzle, llave | 6 h | 4 h| -2h| Tener una interfaz para todos los objetos interactuables facilita la programación |
+| E. Tensión | 3 h | 1h | -2h | Los eventos son mas sencillos de lo que pensaba|
+| F. Puerta, final, reinicio | 4 h | 2 h| -2h| |
+| G. Audio, luz, feedback | 4 h | | | |
+| H. Test + correcciones | 4 h | | | |
+| I. Documentación | 5 h | | | |
+| J. Build y memoria | 4 h | | | |
 | **Total** | **40 h** | | | |
 
 ### Cambios de alcance y motivos

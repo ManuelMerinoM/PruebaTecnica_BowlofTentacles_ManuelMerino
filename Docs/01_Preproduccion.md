@@ -126,3 +126,5 @@ Partida completa jugable de principio a fin con los textos literales, las 3 zona
 
 ## Actualizaciones
 Aqui se añadiran posibles actualizaciones.
+
+La caja se abrira presionando botones en la interfaz en vez de en el modelo 3d para que sea mas escalable y sencillo. 

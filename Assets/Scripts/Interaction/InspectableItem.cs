@@ -27,6 +27,11 @@ public class InspectableItem : MonoBehaviour, IInteractable
     [SerializeField] private bool isNote;
     [SerializeField] private string noteContent;
 
+    [Header("Evento especial")]
+    [SerializeField] private bool triggersLivingRoomEvent;
+
+    public bool TriggersLivingRoomEvent => triggersLivingRoomEvent;
+
     public bool IsNote => isNote;
     public string NoteContent => noteContent;
 
@@ -52,7 +57,7 @@ public class InspectableItem : MonoBehaviour, IInteractable
 
         inspectionPoint = point;
 
-        itemColliders = GetComponentsInChildren<Collider>(true);
+        itemColliders = GetComponents<Collider>();
         colliderStates = new bool[itemColliders.Length];
 
         for (int i = 0; i < itemColliders.Length; i++)
@@ -74,7 +79,6 @@ public class InspectableItem : MonoBehaviour, IInteractable
 
         transform.SetParent(inspectionPoint, false);
         transform.localPosition = Vector3.zero;
-        transform.localRotation = Quaternion.identity;
 
         isBeingInspected = true;
     }
@@ -107,24 +111,22 @@ public class InspectableItem : MonoBehaviour, IInteractable
         transform.rotation = originalRotation;
         transform.localScale = originalLocalScale;
 
-        // Restaurar también la posición y rotación locales
-        // para conservar la jerarquía original.
         transform.localPosition = originalLocalPosition;
         transform.localRotation = originalLocalRotation;
 
-        if (itemColliders != null)
-        {
-            for (int i = 0; i < itemColliders.Length; i++)
-            {
-                if (itemColliders[i] != null)
-                    itemColliders[i].enabled = colliderStates[i];
-            }
-        }
+        var lockComp = GetComponent<CodeBoxLock>();
 
-        if (itemRigidbody != null)
+        for (int i = 0; i < itemColliders.Length; i++)
         {
-            itemRigidbody.isKinematic = wasKinematic;
-            itemRigidbody.useGravity = hadGravity;
+            if (itemColliders[i] == null) continue;
+
+            bool restore = colliderStates[i];
+
+            if (lockComp != null && lockComp.IsOpen &&
+                itemColliders[i] == lockComp.InteractionCollider)
+                restore = false;
+
+            itemColliders[i].enabled = restore;
         }
 
         inspectionPoint = null;

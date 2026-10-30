@@ -104,7 +104,8 @@ public class PlayerInteractor : MonoBehaviour
 
     private void OnInteract(InputAction.CallbackContext context)
     {
-        if (modeController != null && modeController.IsBusy)
+        if (InteractionModeController.Instance.IsBusy &&
+            !InteractionModeController.Instance.CanInteractWithContents)
             return;
 
         if (currentInteractable != null)
