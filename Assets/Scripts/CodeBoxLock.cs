@@ -20,6 +20,13 @@ public class CodeBoxLock : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip failureSound;
 
+    [Header("Mensaje de error")]
+    [SerializeField] private MessageController messageController;
+    [TextArea]
+    [SerializeField]
+    private string message =
+        "Asi no era la rutina de mama";
+
     [Header("Collider de interacción")]
     [SerializeField] private Collider interactionCollider;
     public Collider InteractionCollider => interactionCollider;
@@ -57,6 +64,9 @@ public class CodeBoxLock : MonoBehaviour
 
         if (!correct)
         {
+            if (messageController != null)
+                messageController.ShowMessage(message);
+
             if (audioSource != null && failureSound != null)
                 audioSource.PlayOneShot(failureSound);
 

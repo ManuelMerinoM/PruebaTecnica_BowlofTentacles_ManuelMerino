@@ -200,7 +200,7 @@ public class InteractionModeController : MonoBehaviour
         if (keypadPanel != null)
             keypadPanel.SetActive(showKeypad);
 
-        // Bloquear rotación si aparece el teclado.
+
         isUsingKeypad = showKeypad;
 
         if (activeCodeBox != null)

@@ -78,13 +78,12 @@ public class EndingEvent : MonoBehaviour
 
         yield return new WaitForSeconds(voiceDuration);
 
+        yield return StartCoroutine(FadeToBlack());
+
         yield return new WaitForSeconds(waitAfterVoice);
 
         //door.CloseDoor();
 
-        yield return new WaitForSeconds(1.5f);
-
-        yield return StartCoroutine(FadeToBlack());
 
         if (endingPanel != null)
             endingPanel.SetActive(true);

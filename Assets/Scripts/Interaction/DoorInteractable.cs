@@ -83,6 +83,7 @@ public class DoorInteractable : MonoBehaviour, IInteractable
         if (doorAnimator != null)
             doorAnimator.SetTrigger(closeTrigger);
 
+
         if (audioSource != null && closeSound != null)
             audioSource.PlayOneShot(closeSound);
     }
