@@ -14,7 +14,7 @@ public class DoorInteractable : MonoBehaviour, IInteractable
     [Header("Audio")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip openSound;
-    [SerializeField] private AudioClip closeSound;
+    [SerializeField] public AudioClip closeSound;
     [SerializeField] private AudioClip lockedSound;
 
     [Header("Messages")]

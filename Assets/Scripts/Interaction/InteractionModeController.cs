@@ -95,6 +95,12 @@ public class InteractionModeController : MonoBehaviour
         activeItem.StartInspection(inspectionPoint);
 
         SetupCodeBox(item);
+        CodeBoxLock codeBox = item.GetComponent<CodeBoxLock>();
+
+        if (codeBox != null)
+        {
+            codeBox.ShowInspectionMessage();
+        }
 
         if (item.IsNote)
             ShowNote(item);

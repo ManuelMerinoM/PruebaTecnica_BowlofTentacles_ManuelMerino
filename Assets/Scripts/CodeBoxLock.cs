@@ -27,6 +27,12 @@ public class CodeBoxLock : MonoBehaviour
     private string message =
         "Asi no era la rutina de mama";
 
+    [Header("Mensaje al examinar")]
+    [TextArea]
+    [SerializeField]
+    private string inspectionMessage =
+    "Mamá guardaba aquí las llaves de repuesto";
+
     [Header("Collider de interacción")]
     [SerializeField] private Collider interactionCollider;
     public Collider InteractionCollider => interactionCollider;
@@ -84,5 +90,11 @@ public class CodeBoxLock : MonoBehaviour
         
 
         return true;
+    }
+
+    public void ShowInspectionMessage()
+    {
+        if (messageController != null)
+            messageController.ShowMessage(inspectionMessage);
     }
 }

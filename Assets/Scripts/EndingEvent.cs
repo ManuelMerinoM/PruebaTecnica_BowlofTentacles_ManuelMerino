@@ -64,6 +64,10 @@ public class EndingEvent : MonoBehaviour
         
         door.OpenDoor();
 
+        yield return new WaitForSeconds(1f);
+
+        voiceSource.PlayOneShot(door.closeSound);
+
         yield return new WaitForSeconds(waitBeforeVoice);
 
         if (messageController != null)
@@ -81,6 +85,8 @@ public class EndingEvent : MonoBehaviour
         yield return StartCoroutine(FadeToBlack());
 
         yield return new WaitForSeconds(waitAfterVoice);
+
+        
 
         //door.CloseDoor();
 
