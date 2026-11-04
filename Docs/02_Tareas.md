@@ -12,6 +12,7 @@ Para la organización de tareas he elegido Trello para hacer el [tablero](https:
 - Inicial:
 ![Texto alternativo](Imagenes/tablero_inicio.png)
 ![Texto alternativo](Imagenes/tabla.png)
-- Final: `![Texto alternativo](Imagenes/tablero_Final.png)` *(pendiente)*
-
+- Final: 
+![Texto alternativo](Imagenes/tablero_Final.png) 
+![Texto alternativo](Imagenes/tabla_Final.png) 
 
