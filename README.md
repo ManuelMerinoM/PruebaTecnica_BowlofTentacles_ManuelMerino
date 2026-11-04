@@ -65,7 +65,7 @@ Al pulsar Iniciar se carga la escena `GameScene`, donde se desarrolla la partida
 
 **Ubicación:** Google Drive
 
-**Enlace de descarga:** https://drive.google.com/file/d/1K-EiOx1kYU1k0zknf95lTvLH-9hL81m2/view?usp=sharing.
+**Enlace de descarga:** https://drive.google.com/file/d/1AW2UoD9AULV7AlGPVZKCRxm85QzuAGQ3/view?usp=sharing
 
 La compilación final esta destinada a Windows.
 
