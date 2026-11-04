@@ -151,7 +151,7 @@ public class InteractionModeController : MonoBehaviour
     {
         if (!IsBusy)
             return;
-        bool playLivingRoomEvent = activeItem != null && activeItem.TriggersLivingRoomEvent;
+        bool playLivingRoomEvent = activeItem != null && activeItem.RoomEvent;
 
         if (activeItem != null)
         {

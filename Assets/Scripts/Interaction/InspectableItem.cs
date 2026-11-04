@@ -28,9 +28,9 @@ public class InspectableItem : MonoBehaviour, IInteractable
     [SerializeField] private string noteContent;
 
     [Header("Evento especial")]
-    [SerializeField] private bool triggersLivingRoomEvent;
+    [SerializeField] private bool triggerRoomEvent;
 
-    public bool TriggersLivingRoomEvent => triggersLivingRoomEvent;
+    public bool RoomEvent => triggerRoomEvent;
 
     public bool IsNote => isNote;
     public string NoteContent => noteContent;

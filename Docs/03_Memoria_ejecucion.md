@@ -38,13 +38,12 @@
 - **Comprobaciones:** Testeos de que todos los sonidos se oyen con claridad, no hay bugs visuales en los objetos de la casa y correcto funcionamiento de la función de reinicio.
 - **Commits relevantes:** Reinicio y sonidos. Modelado de la casa.
 
-## Jornada 5: [fecha]
-- **Tiempo aproximado:** 
-- **Tareas realizadas:** 
-- **Decisiones:** 
-- **Problemas y soluciones:** 
-- **Comprobaciones (build, clon limpio, consola):** 
-- **Commits relevantes:** 
+## Jornada 5: [04/11/2026]
+- **Tiempo aproximado:** 4 horas
+- **Tareas realizadas:** Comprobación del recorrido con personas externas, cambios en base al feedback y documentación final.
+- **Decisiones:** Hacer cambios al proyecto teniendo en cuenta el feedback de los testers.
+- **Comprobaciones:** El recorrido se hace correctamente y no genera dudas ante una persona ajena al proyecto.
+- **Commits relevantes:** Memoria Final
 
 ---
 
@@ -58,28 +57,30 @@
 | B. Greybox + movimiento | 3 h | 2 h| -1h| Tarde menos en el greybox de lo que pensaba|
 | C. Interacción base + progreso + UI | 4 h | 4 h| 0h| |
 | D. Notas, caja, puzzle, llave | 6 h | 4 h| -2h| Tener una interfaz para todos los objetos interactuables facilita la programación |
-| E. Tensión | 3 h | 1h | -2h | Los eventos son mas sencillos de lo que pensaba|
-| F. Puerta, final, reinicio | 4 h | 2 h| -2h| |
-| G. Audio, luz, feedback | 4 h | 2 h | -2h| No eran tantos sonidos para tardar tanto|
-| H. Test + correcciones | 4 h | | | |
-| I. Documentación | 5 h | | | |
-| J. Build y memoria | 4 h | | | |
-| **Total** | **40 h** | | | |
+| E. Tensión | 3 h | 2h | -1h | Los eventos son mas sencillos de lo que pensaba|
+| F. Puerta, final, reinicio | 4 h | 3 h| -1h| |
+| G. Audio, luz, feedback | 4 h | 3 h | -1h| No eran tantos sonidos para tardar tanto|
+| H. Test + correcciones | 4 h | 2 h | -2h| Los tests fueron rapidos y no había ningún problema grave o complicado de solucionar|
+| I. Documentación | 5 h | 4 h| -1h | Es mucho mas sencillo con una plantilla sobre la que escribir |
+| **Total** | **36 h** | 27 h | -9h | He sobreestimado el tiempo que tardaría en realizar varias tareas|
 
 ### Cambios de alcance y motivos
-- 
+- Añadir mas botones a la caja, una de las testers acertaron la combinación poniendo códigos aleatorios en la caja.
 
 ### Tareas pendientes y cómo continuaría
-- 
+- Añadir algún sonido mas para el feedback del jugador como los propios pasos de este.
+- Continuaría añadiendo mas zonas de la casa y puzzles extras, cambiaría el orden de los puzzles poniendo el actual al final del juego.
 
 ### Limitaciones conocidas
-- La caja al tener solo tres botones es decifrable con la primera nota, pero el código esta contruido de tal manera que sea muy fácil añadir mas botones.
+- La caja al tener solo tres botones es decifrable con la primera nota, pero el código esta construido de tal manera que sea muy fácil añadir mas botones.
 
 ### Qué haría diferente
-- 
+- Añadir mas botones a la caja.
+- Añadir mas decoración específica de casa como sofases, ya que la ambientación actual es correcta pero puede sentirse un poco vacias las habitaciones actuales.
 
 ### Observaciones del test con otra persona
-- Qué le costó entender:
-- Duración de su partida:
-- Cambios que hice a raíz de ello:
+- Qué le costó entender: Nada
+- Duración de su partida: 2'5 min , 3 min y 3 min
+- Feedback: Titulo en mayuscula, botones de otro color, rara interaccion de la caja, no se dio cuenta del movimiento de la silla, no oye sonidos de pasos propios, interfaz rara para la caja, texto inicial muy rápido, audio del final muy bajo, hacer visible la llave cuando se pone el codigo dentro de la caja
+- Cambios que hice a raíz de ello: Cambio de rotación de la caja para ver la llave al abrir, sonido mas alto de la voz del final, cambio de colores y composición de la pantalla de inicio.
 

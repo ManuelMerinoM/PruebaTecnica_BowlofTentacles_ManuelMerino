@@ -5,9 +5,6 @@ public class KeyPickup : MonoBehaviour, IInteractable
     [Header("Inventory")]
     [SerializeField] private PlayerInventory playerInventory;
 
-    [Header("Audio")]
-    [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioClip pickupSound;
 
     public string InteractionPrompt => "[E] Recoger llave";
 
@@ -21,8 +18,6 @@ public class KeyPickup : MonoBehaviour, IInteractable
 
         playerInventory.AddSpareKey();
 
-        if (audioSource != null && pickupSound != null)
-            audioSource.PlayOneShot(pickupSound);
 
         gameObject.SetActive(false);
     }
